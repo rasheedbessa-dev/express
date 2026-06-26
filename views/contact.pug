@@ -1,0 +1,22 @@
+extends layout
+
+block contenu
+    h1 Nous Contacter
+    
+    // Condition : est-ce qu'on est ouvert ?
+    if estOuvert
+        p.status-ouvert ✅ Nous sommes ouverts !
+    else
+        p.status-ferme ❌ Nous sommes fermés.
+    
+    p Email : #{email}
+    
+    // Formulaire de contact
+    form(action="/contact", method="POST")
+        label Votre nom :
+        input(type="text", name="nom", placeholder="Votre nom")
+        
+        label Votre message :
+        textarea(name="message", placeholder="Votre message...")
+        
+        button(type="submit") Envoyer

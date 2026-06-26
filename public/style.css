@@ -1,0 +1,68 @@
+/* ====== CARTES DE SERVICE ====== */
+.service-card {
+    background: white;
+    padding: 20px;
+    margin: 15px 20px;
+    border-radius: 10px;
+    border-left: 5px solid #4a90d9;
+}
+
+.service-card h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.service-card p {
+    margin: 0;
+    color: #666;
+}
+
+/* ====== STATUT OUVERT/FERMÉ ====== */
+.status-ouvert {
+    color: green;
+    font-weight: bold;
+}
+
+.status-ferme {
+    color: red;
+    font-weight: bold;
+}
+
+/* ====== FORMULAIRE ====== */
+form {
+    margin: 20px;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4a90d9;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 15px;
+    background-color: #4a90d9;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #357abd;
+}
+nav a{
+    padding: 10px;
+    flex-wrap: wrap;
+}

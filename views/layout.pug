@@ -1,0 +1,17 @@
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+       
+        title=titre+'MonSite'
+        link(rel="stylesheet", href="/style.css")
+    body 
+     nav
+      a(href="/", class=(active==='acceuil'?'active':'')) Acceuil
+      a(href="/services",class=(active==='Services'?'active':'')) Nos services 
+      a(href="/contact",class=(active==='conatct'?'active':'')) Nous contacter 
+
+      block contenu 
+
+      footer 
+      p &copy ;2026 Monsite 
+         

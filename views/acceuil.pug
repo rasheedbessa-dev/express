@@ -1,0 +1,7 @@
+extends layout 
+
+block contenu 
+     h1= messageBienvenue 
+     p Page d'acceuil.
+     p Le nombre de visiteurs aujourd'hui : #{nombreVisites}
+     p Date : #{new Date().toLocaleDateString('fr-FR')}

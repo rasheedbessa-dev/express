@@ -1,0 +1,14 @@
+extends layout 
+
+block contenu 
+   h1 Nos services 
+   p Nous vous proposons: 
+
+   each service in services
+    .service-card
+     h2=service.icone +''+service.nom 
+     p Prix: #{service.prix}
+
+
+   else 
+    p Aucun service pour le moment.
